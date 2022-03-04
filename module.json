@@ -1,0 +1,22 @@
+{
+    "name": "tokenDistanceDisplay",
+    "title": "Token Distance Display",
+    "description": "A simple module that shows the distance between the selected Token and a hovered token including elevation",
+    "author": "J-Guenther",
+    "version": "0.0.1",
+    "minimumCoreVersion": "9.238",
+    "scripts": [
+        "scripts/tokenDistanceDisplay.js"
+    ],
+    "styles": [
+        "styles/style.css"
+    ],
+    "url": "",
+    "bugs": "",
+    "readme": "README.md",
+    "license": "LICENSE",
+    "download": "",
+    "manifest": "",
+    "compatibleCoreVersion": "9",
+    "changelog": ""
+}

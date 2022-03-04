@@ -1,0 +1,13 @@
+#distanceDisplay {
+    width: 150px;
+    margin: 0 10px 10px 0;
+    align-self: flex-end;
+    font-family: var(--font-mono);
+    background: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    padding-left: 10px;
+    line-height: 30px;
+    color: var(--color-text-light-heading);
+    border: 1px solid var(--color-border-light-tertiary);
+    border-radius: 5px;
+}
