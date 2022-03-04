@@ -24,7 +24,8 @@ class TokenDistanceDisplay {
         const elevationDistance = Math.abs(token2.data.elevation - token1.data.elevation);
         const gridDistance = this.get5eGridDistance(token1, token2);
         if (elevationDistance !== 0) {
-            return Math.floor(Math.hypot(elevationDistance, gridDistance));
+            const hypot = Math.floor(Math.hypot(elevationDistance, gridDistance));
+            return hypot - hypot % 5; // round to 5e Grid
         } else {
             return gridDistance;
         }
