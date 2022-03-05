@@ -25,7 +25,7 @@ class TokenDistanceDisplay {
         const gridDistance = this.get5eGridDistance(token1, token2);
         if (elevationDistance !== 0) {
             const hypot = Math.floor(Math.hypot(elevationDistance, gridDistance));
-            return hypot - hypot % 5; // round to 5e Grid
+            return hypot - hypot % canvas.scene.data.gridDistance; // round to 5e Grid
         } else {
             return gridDistance;
         }
@@ -36,6 +36,7 @@ class TokenDistanceDisplay {
         let deltaX = Math.abs((token1.x - token2.x) / gridSize);
         let deltaY = Math.abs((token1.y - token2.y) / gridSize);
         let distance = Math.max(deltaX, deltaY);
+        console.log(canvas.scene.data.gridDistance);
         return distance * canvas.scene.data.gridDistance;
     }
 
