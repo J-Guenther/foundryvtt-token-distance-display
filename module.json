@@ -11,12 +11,12 @@
     "styles": [
         "styles/style.css"
     ],
-    "url": "",
+    "url": "https://github.com/J-Guenther/foundryvtt-token-distance-display",
     "bugs": "",
     "readme": "README.md",
     "license": "LICENSE",
-    "download": "",
-    "manifest": "",
+    "download": "https://github.com/J-Guenther/foundryvtt-token-distance-display/archive/v0.1-beta.zip",
+    "manifest": "https://raw.githubusercontent.com/J-Guenther/foundryvtt-token-distance-display/main/module.json",
     "compatibleCoreVersion": "9",
     "changelog": ""
 }
