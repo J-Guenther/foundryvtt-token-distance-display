@@ -11,8 +11,7 @@ class TokenDistanceDisplay {
     }
 
     static async selectTokens(hoveredToken){
-        console.log('controlled token: ', canvas.tokens.controlled);
-        if (canvas.tokens.controlled.length !== 1 || !hoveredToken._hover) {
+        if (canvas.tokens.controlled.length !== 1 || !hoveredToken.hover) {
             this.updateDisplay("Distance: N/A")
         } else {
             const distance = this.measureDistance(canvas.tokens.controlled[0], hoveredToken);
@@ -21,11 +20,11 @@ class TokenDistanceDisplay {
     }
 
     static measureDistance(token1, token2) {
-        const elevationDistance = Math.abs(token2.data.elevation - token1.data.elevation);
+        const elevationDistance = Math.abs(token2.document.elevation - token1.document.elevation);
         const gridDistance = this.get5eGridDistance(token1, token2);
         if (elevationDistance !== 0) {
             const hypot = Math.floor(Math.hypot(elevationDistance, gridDistance));
-            return hypot - hypot % canvas.scene.data.gridDistance; // round to 5e Grid
+            return hypot - hypot % canvas.scene.grid.distance; // round to 5e Grid
         } else {
             return gridDistance;
         }
@@ -36,8 +35,7 @@ class TokenDistanceDisplay {
         let deltaX = Math.abs((token1.x - token2.x) / gridSize);
         let deltaY = Math.abs((token1.y - token2.y) / gridSize);
         let distance = Math.max(deltaX, deltaY);
-        console.log(canvas.scene.data.gridDistance);
-        return distance * canvas.scene.data.gridDistance;
+        return distance * canvas.scene.grid.distance;
     }
 
     static updateDisplay(newValue) {

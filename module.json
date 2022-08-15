@@ -1,22 +1,27 @@
 {
-    "name": "tokenDistanceDisplay",
-    "title": "Token Distance Display",
-    "description": "A simple module that shows the distance between the selected Token and a hovered token including elevation",
-    "author": "J-Guenther",
-    "version": "0.0.1",
-    "minimumCoreVersion": "9.238",
-    "scripts": [
-        "scripts/tokenDistanceDisplay.js"
-    ],
-    "styles": [
-        "styles/style.css"
-    ],
-    "url": "https://github.com/J-Guenther/foundryvtt-token-distance-display",
-    "bugs": "",
-    "readme": "README.md",
-    "license": "LICENSE",
-    "download": "https://github.com/J-Guenther/foundryvtt-token-distance-display/archive/v0.1-beta.zip",
-    "manifest": "https://raw.githubusercontent.com/J-Guenther/foundryvtt-token-distance-display/main/module.json",
-    "compatibleCoreVersion": "9",
-    "changelog": ""
+  "title": "Token Distance Display",
+  "description": "A simple module that shows the distance between the selected Token and a hovered token including elevation",
+  "version": "0.0.1",
+  "scripts": [
+    "scripts/tokenDistanceDisplay.js"
+  ],
+  "styles": [
+    "styles/style.css"
+  ],
+  "url": "https://github.com/J-Guenther/foundryvtt-token-distance-display",
+  "readme": "README.md",
+  "license": "LICENSE",
+  "download": "https://github.com/J-Guenther/foundryvtt-token-distance-display/archive/v0.1-beta.zip",
+  "manifest": "https://raw.githubusercontent.com/J-Guenther/foundryvtt-token-distance-display/main/module.json",
+  "id": "tokenDistanceDisplay",
+  "authors": [
+    {
+      "name": "J-Guenther",
+      "flags": {}
+    }
+  ],
+  "compatibility": {
+    "minimum": "9.238",
+    "verified": "9"
+  }
 }
